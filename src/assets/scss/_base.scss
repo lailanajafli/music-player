@@ -14,7 +14,6 @@
 }
 
 body {
-  background-color: #202424;
   overflow-x: hidden;
 }
 
@@ -30,12 +29,18 @@ a {
   width: 100%;
   height: 100%;
   padding: 0 12px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 100vh;
   margin: 0 auto;
 }
 
 .row {
   width: 100%;
   height: 100%;
+  justify-content: center;
+  align-items: center;
   display: flex;
 }
 
