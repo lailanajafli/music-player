@@ -16,7 +16,6 @@
 }
 
 body {
-  background-color: #202424;
   overflow-x: hidden;
 }
 
@@ -28,17 +27,21 @@ a {
   color: #fff;
 }
 
-.container {
-  width: 100%;
-  height: 100%;
-  padding: 0 12px;
-  margin: 0 auto;
-}
-
-.row {
-  width: 100%;
-  height: 100%;
-  display: flex;
+.container { 
+  width: 100%; 
+  height: 100%; 
+  padding: 0 12px; 
+  margin: 40px; 
+  display: flex; 
+  justify-content: center; 
+} 
+ 
+.row { 
+  width: 100%; 
+  height: 100%; 
+  display: flex; 
+  justify-content: space-between; 
+  margin: 10px 0; 
 }
 
 @media (min-width: 576px) {
