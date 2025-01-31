@@ -23,7 +23,7 @@ const Player = () => {
           <div className="recently">
             <div className="recentlyText">
               <h2>Recently Played</h2>
-              <p>See All</p>
+              <p>See All</p> 
             </div>
             <div className="slider">
               <Swiper
