@@ -18,6 +18,8 @@ const App = () => {
     <MainContext>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/player" element={<Player />} />
+        <Route path="/" element={<PlayList />} />
       </Routes>
     </MainContext>
   );

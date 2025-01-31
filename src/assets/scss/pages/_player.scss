@@ -1,0 +1,69 @@
+.musicPlayer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom, #141414, #2e2e2e);
+    padding: 20px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 350px;
+    color: white;
+    text-align: center;
+  }
+  
+  .albumCover img {
+    width: 100%;
+    border-radius: 15px;
+  }
+  
+  .heartIcon {
+    color: white;
+    margin: 10px 0;
+    font-size: 1.5rem;
+  }
+  
+  .waveform {
+    display: flex;
+    align-items: flex-end;
+    height: 50px;
+    gap: 2px;
+    width: 100%;
+    margin: 10px 0;
+  }
+  
+  .bar {
+    width: 5px;
+    background: purple;
+    border-radius: 3px;
+  }
+  
+  .controls {
+    display: flex;
+    gap: 15px;
+    margin: 15px 0;
+  }
+  
+  .icon {
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+  
+  .playPause {
+    font-size: 2.5rem;
+  }
+  
+  .progress {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  input[type="range"] {
+    flex: 1;
+    appearance: none;
+    background: white;
+    height: 3px;
+    border-radius: 5px;
+  }
+  
