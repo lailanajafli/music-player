@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FiSearch } from "react-icons/fi";
 import { FaRegHeart } from "react-icons/fa";
 import music1 from "../assets/images/music1.png";
@@ -10,8 +10,29 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation } from "swiper/modules";
+import axios from "axios";
 
 const Player = () => {
+  const [playlist, setPlaylist] = useState([]);
+
+  const getPlaylist = async () => {
+    try {
+      const response = await axios.get(
+        "http://localhost:5000/api/music?s=adele"
+      );
+      console.log(response.data.results);
+      if (response.data.results) {
+        setPlaylist(response.data.results);
+        console.log(playlist);
+      }
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
+
+  useEffect(() => {
+    getPlaylist();
+  }, []);
   return (
     <section className="playList">
       <div className="container">
@@ -23,7 +44,7 @@ const Player = () => {
           <div className="recently">
             <div className="recentlyText">
               <h2>Recently Played</h2>
-              <p>See All</p> 
+              <p>See All</p>
             </div>
             <div className="slider">
               <Swiper
@@ -77,8 +98,6 @@ const Player = () => {
                     </div>
                   </div>
                 </SwiperSlide>
-
-                
               </Swiper>
             </div>
             <div className="playlist">
