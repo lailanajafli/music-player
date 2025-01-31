@@ -77,6 +77,8 @@ const Player = () => {
                     </div>
                   </div>
                 </SwiperSlide>
+
+                
               </Swiper>
             </div>
             <div className="playlist">
