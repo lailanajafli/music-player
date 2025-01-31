@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import Sonata from "../assets/images/sonata.mp3";
 
 const MusicPlayer = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -92,7 +93,7 @@ const MusicPlayer = () => {
             <button onClick={togglePlay}>{isPlaying ? "Pause" : "Play"}</button>
             <button onClick={nextSlide}>⏭</button>
           </div>
-          <audio ref={audioRef} src="song.mp3"></audio>
+          <audio ref={audioRef} src={Sonata}></audio>
         </div>
       </div>
     </div>
