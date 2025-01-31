@@ -35,7 +35,7 @@ const MusicPlayer = () => {
         <img src="/path-to-your-image.jpg" alt="Album Cover" />
       </div>
       <h3>Back To Her Men</h3>
-      <p>Demien Rice</p>
+      <p>Demien Ricee</p>
       <FaHeart className="heartIcon" />
       <div className="waveform">
         {[...Array(30)].map((_, i) => (
